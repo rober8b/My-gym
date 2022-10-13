@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "nombre": "Mancuernas",
+      "precio": 50,
+      "cantidad": 1,
+      "descripcion": "SET MANCUERNAS",
+      "img": "/images/product-1.jpg",
+      "descuento": true
+    },
+    {
+      "id": 2,
+      "nombre": "Banca",
+      "precio": 300,
+      "cantidad": 1,
+      "descripcion": "Banca Reclinable",
+      "img": "/images/product-2.jpg",
+      "descuento": false
+    },
+    {
+      "id": 3,
+      "nombre": "Barra",
+      "precio": 250,
+      "cantidad": 1,
+      "descripcion": "Set de barras de acero",
+      "img": "/images/product-3.jpg",
+      "descuento": false
+    },
+    {
+      "id": 4,
+      "nombre": "Barras x3",
+      "precio": 300,
+      "cantidad": 1,
+      "descripcion": "Set de Barras x3",
+      "img":"/images/product-4.jpg",
+      "descuento": false
+    },
+    {
+      "id": 5,
+      "nombre": "Mancuerna",
+      "precio": 100,
+      "cantidad": 1,
+      "descripcion": "Mancuerna 30kg",
+      "img": "/images/product-5.jpg",
+      "descuento": false
+    },
+    {
+      "id": 6,
+      "nombre": "Bolso",
+      "precio": 650,
+      "cantidad": 1,
+      "descripcion": "Bolso de Boxeo PRO",
+      "img": "/images/product-6.jpg",
+      "descuento": false
+    }
+]
+
+

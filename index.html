@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gym Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://kit.fontawesome.com/38ca4e1d24.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <nav class="page-nav navbar navbar-expand-lg navbar-dark bd-navbar sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b>My Gym</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="nav navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Prod">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Nos">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                <span id="openCar" class="button-checkout nav-link">
+                    <i data-bs-toggle="modal" data-bs-target="#exampleModal" class="fa-solid fa-cart-shopping"></i><span id="contador-carrito"></span>
+                </span>
+                </li>       
+              </ul>
+            </div>
+        </div>     
+    </nav>
+
+
+    <div class="info-content">
+        <div class="info-txt">
+         <h1><b>SE LA MEJOR VERSION DE TI MISMO.</b></h1>
+         <a href="#Prod">
+           <button type="button" class="btn btn-link shadow-none"><p><i class="arrow down"></i></p></button>
+         </a>
+        </div>
+       </div>
+
+    <!-- Carrousel -->
+    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/banner-1.jpg" class="d-block w-100 img-fluid h-75" alt="gym">
+          </div>
+          <div class="carousel-item">
+            <img src="images/banner-2.jpg" class="d-block w-100 img-fluid h-75" alt="gym">
+          </div>
+          <div class="carousel-item">
+            <img src="images/banner-3.jpg" class="d-block w-100 img-fluid h-75" alt="gym">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+  
+    <!-- Productos -->
+    <div id="Prod" class="prod"></div>
+
+    <div class="products-title text-center">
+    <h2>NUESTROS PRODUCTOS</h2>
+    <p class="text-muted">Lo utlimo en equipamiento fitness</p>
+    </div>
+    
+    <div id="producto-contenedor" class="page-content">
+
+    </div>
+
+
+    <!-- MODAL CARRITO -->
+    <section class="modal fade" id="exampleModal" tabindex="-1" data-bs-focus="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">TU CARRITO</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              
+              <div class="row text-center" id="carrito">
+          
+              </div>
+              
+          </div>
+          <div class="modal-footer">
+           <button class="btn btn-danger" type="button" id="vaciar-carrito">Vaciar todo</button>
+           <button class="btn btn-primary btn-accion" data-bs-dismiss="modal" type="button" id="btn-accion seguir-comprando" aria-label="Close">Seguir Comprando</button>
+           <button class="btn btn-success btn-accion" type="button" id="finalizar-compra">Finalizar Compra</button>
+          <div id="total"></div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+   <!-- nosotros seccion -->
+    <div id="Nos" class="Nos"></div>
+    
+    <div class="nosotros">
+    <section class="bg-img1 banner-ns text-center p-lr-15 p-tb-92 w-100" style="background-image: url(images/nosotros-banner.jpg);">
+        <h2 class="text-center titulo-ns">N O S O T R O S</h2>
+    </section>
+    <div class="content-ns">
+        <div class="text-left txt-ns">
+         <h3>Nuestra historia</h3>
+         <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolor sit facilis impedit beatae magni blanditiis ex, repellat enim atque unde dicta! Illo aliquam soluta adipisci placeat iste odit omnis maxime labore sint. Maiores, a. Quam odit quibusdam iure praesentium aspernatur. Hic, totam dolore. Iusto, molestias obcaecati. Dicta tempora dolores ullam laboriosam cupiditate impedit dolorum. Aliquid accusantium accusamus mollitia blanditiis suscipit, distinctio fugiat! Cumque assumenda libero explicabo, dolores quaerat ipsum asperiores labore. Sunt possimus officiis ipsa saepe, dolor iste quas deserunt iusto, commodi mollitia hic repudiandae eveniet assumenda quisquam? Eveniet quidem quas tempore deleniti repellat vitae dolore. Ipsam, sequi autem.</p>
+        </div>
+    </div>
+
+
+    <!-- google maps -->
+     <div class="maps">
+      <h4 class="text-muted text-center">Donde nos encontramos?</h4>
+       <div class="maps-container">
+         <!-- <iframe class="mapa"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1205249.463954089!2d-118.95051911200892!3d33.44767114992443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bacf4578353b%3A0x475106ed00e39b87!2sGold&#39;s%20Gym%20Venice!5e0!3m2!1ses-419!2sar!4v1662256215812!5m2!1ses-419!2sar" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+       </div>
+     </div>
+    </div>
+
+
+    <!-- FORM DE CONTACTO -->
+    <section class="get-in-touch" id="Contacto">
+        <h3 class="form-title text-center rounded-top"><b>C O N T A C T A N O S</b></h3>
+        <h6 class="form-subtitle text-center text-muted">Dejanos un mensaje</h6>
+        <form class="contact-form " id="form1">
+            <div class="mb-3">
+             <label for="InputName" class="form-label">Nombre</label>
+                <input id="nombreForm" name="nombreForm" natype="name" placeholder="Ingrese su nombre..." class="form-control" id="InputName">
+            </div>
+            <div class="mb-3">
+              <label for="InputEmail" class="form-label">E-mail</label>
+                  <input id="emailForm" name="emailForm" type="email" placeholder="Ingrese su correo..." class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="FormControlTextarea" class="form-label">Su mensaje...</label>
+                <textarea id="msgForm" name="msgForm" class="form-control" id="FormControlTextarea" rows="3"></textarea>
+            </div>
+             <button type="submit" id="btn-enviar" class="btn btn-primary btn-form">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!--Footer -->
+    <footer class="footer">
+        <div class="footer-title text-center">
+        <h4>© My gym 2022</h4>
+       </div>
+       <div class="social-media text-center">
+        <div class="icons">
+        <div class="social-img">
+          <a href="#"><i class="fa-brands fa-xl fa-square-instagram"></i></a>
+        </div>
+        <div class="social-img">
+           <a href="https://github.com/rober8b/Ecommerce-MY-GYM" target="_blank"><i class="fa-brands fa-xl fa-square-github"></i></a>
+        </div>
+        <div class="social-img">
+           <a href="https://www.linkedin.com/in/robertino-barbuto-651a561ab/" target="_blank"><i class="fa-brands fa-xl fa-linkedin"></i></a>
+        </div>
+       </div>
+      </div>
+    </footer>
+    
+    <script src="/js/scripts.js" type="module" ></script>
+    <script src="/js/form.js" type="module" ></script>
+    <script src="/js/storage.js" type="module" ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
